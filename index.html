@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="个人主页设计预览：科研论文、App 作品与社交账号。">
+  <meta name="color-scheme" content="light dark">
+  <title>个人主页 · 设计预览</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%2318181b'/%3E%3Cpath d='M20 44V20h12c16 0 16 24 0 24z' fill='none' stroke='%235eead4' stroke-width='4'/%3E%3C/svg%3E">
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem('portfolio-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); } catch { document.documentElement.dataset.theme = 'light'; }</script>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./content.js" defer></script>
+  <script src="./site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至主要内容</a>
+  <div class="site-shell">
+    <header class="header">
+      <a class="monogram" href="#" aria-label="返回首页">Y<span>.</span></a>
+      <nav aria-label="主导航">
+        <a href="#about">关于</a><a href="#publications">论文</a><a href="#apps">App 作品</a><a href="#connect">联系</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="切换为深色主题" title="切换主题">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5Z"/></svg>
+      </button>
+    </header>
+    <main id="main">
+      <section class="intro content-width" id="about" aria-labelledby="intro-heading">
+        <div class="identity"><div class="avatar" aria-label="头像占位">Y<span>N</span></div><div><span class="eyebrow">A PERSONAL SPACE</span><div class="identity-name" id="profile-name">你的姓名 <span>/ Your Name</span></div></div></div>
+        <h1 id="intro-heading">探索有意义的问题，<br>创造有用的工具<span class="accent">。</span></h1>
+        <p class="intro-text" id="profile-bio">这里记录我的科研工作、开发的 App，以及持续探索的想法。从一个值得研究的问题，到一个可以使用的产品。</p>
+        <div class="intro-bottom"><a class="text-link" href="#publications">探索我的工作 <span aria-hidden="true">↗</span></a><span class="preview-note"><i></i>设计预览 · 个人资料待补充</span></div>
+      </section>
+      <section class="visual-strip" aria-label="研究与创作主题插画">
+        <div class="visual-card paper-art"><div class="art-label">01 / RESEARCH</div><div class="paper-sheet"><small>RESEARCH NOTES</small><div class="paper-title">From questions<br>to understanding.</div><div class="paper-lines"></div><svg viewBox="0 0 240 100" aria-hidden="true"><path d="M10 85H230M10 85V10"/><path class="curve" d="M10 79C45 80 40 53 80 58S130 80 155 40 195 53 230 13"/></svg></div></div>
+        <div class="visual-card app-art"><div class="art-label">02 / BUILD</div><div class="phone"><div class="phone-notch"></div><div class="phone-content"><small>MAKE ROOM FOR</small><strong>Your next<br>good idea.</strong><div class="phone-orbit"><span>✳</span></div><div class="phone-bottom"><span>CREATE SOMETHING</span><b>↗</b></div></div></div></div>
+        <div class="visual-card idea-art"><div class="art-label">03 / EXPLORE</div><div class="orbital"><i></i><i></i><i></i><span></span></div><div class="idea-caption">Stay curious.<br><span>Keep making.</span></div></div>
+        <div class="visual-card notes-art"><div class="art-label">04 / CONNECT</div><div class="notes-type">Ideas grow<br>when<br><em>shared.</em></div><div class="notes-bottom">RESEARCH × CODE × LIFE <span>↗</span></div></div>
+      </section>
+      <div class="main-grid content-width">
+        <section id="publications" aria-labelledby="publications-heading">
+          <div class="section-heading"><div><span class="eyebrow">SELECTED PUBLICATIONS</span><h2 id="publications-heading">科研论文<span>.</span></h2></div><span class="section-note">论文排版示例</span></div>
+          <div id="paper-list"></div>
+        </section>
+        <aside class="sidebar">
+          <section class="side-panel"><div class="panel-title"><span class="small-icon" aria-hidden="true">◎</span><h2>关于这个空间</h2></div><p>将严谨的研究与动手创造放在一起。你可以在这里了解我的研究成果、体验我的作品，也可以找到我。</p><div class="interests"><span>Research</span><span>Development</span><span>Ideas</span></div></section>
+          <section class="side-panel now-panel"><div class="panel-title"><span class="small-icon" aria-hidden="true">⌁</span><h2>正在关注</h2></div><p id="profile-focus">这里可以放置你当前的研究方向、正在开发的产品，或最近感兴趣的问题。</p><span class="subtle">研究方向待补充</span></section>
+        </aside>
+      </div>
+      <section class="apps-section content-width" id="apps" aria-labelledby="apps-heading"><div class="section-heading"><div><span class="eyebrow">THINGS I’VE BUILT</span><h2 id="apps-heading">从想法，到 App<span>.</span></h2></div><span class="section-note">App 排版示例</span></div><div class="apps-grid" id="app-list"></div></section>
+      <section class="connect-section content-width" id="connect" aria-labelledby="connect-heading"><div><span class="eyebrow">ELSEWHERE ON THE INTERNET</span><h2 id="connect-heading">保持联系<span>.</span></h2><p>关于研究、产品，或者一个有趣的想法。</p></div><div class="social-list" id="social-list"></div></section>
+    </main>
+    <footer class="footer content-width"><span id="copyright">© 2026 Your Name</span><span>Made with curiosity & care.</span><a href="#">回到顶部 ↑</a></footer>
+  </div>
+</body>
+</html>
