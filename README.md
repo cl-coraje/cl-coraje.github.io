@@ -31,7 +31,7 @@ All navigation links open separate HTML documents. Language and theme preference
 
 ## Shared header assets
 
-All four pages use an avatar-and-name link back to About. The name follows the selected language. `site.js` and `styles.css` are the editable sources; HTML currently references content-hashed copies (`site.a18916a7ac.js` and `styles.549a5e575c.css`) to prevent reuse of outdated scripts/styles. After editing a source, regenerate its hashed copy, update all four HTML references, and publish them together.
+All four pages use an avatar-and-name link back to About. The name follows the selected language. `site.js` and `styles.css` are the editable sources; HTML currently references content-hashed copies (`site.a18916a7ac.js` and `styles.7aaf3ee974.css`) to prevent reuse of outdated scripts/styles. After editing a source, regenerate its hashed copy, update all four HTML references, and publish them together.
 
 ## Copy style
 
