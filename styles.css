@@ -40,3 +40,30 @@
 html[lang=en] h1{line-height:1.25;letter-spacing:-1.7px}
 html[lang=en] .intro-bottom{flex-wrap:wrap;gap:16px 28px}
 @media(max-width:700px){.header{height:auto;min-height:132px;grid-template-columns:1fr auto;gap:18px;padding-top:22px;padding-bottom:15px}.header-actions{grid-column:2;grid-row:1;gap:9px}.header nav{grid-column:1/-1;grid-row:2;justify-self:center}.header .theme-toggle{width:35px;height:35px}.language-switch{padding:3px}.language-switch button{height:28px;min-width:34px;padding-inline:8px}.intro{padding-top:25px}html[lang=en] h1{font-size:clamp(29px,6.5vw,41px)}html[lang=en] .section-heading{align-items:start;flex-wrap:wrap;gap:10px}.header nav a{padding-inline:16px}}
+
+/* Separate pages share navigation, language, and theme controls. */
+.site-shell{display:flex;flex-direction:column}
+#main{flex:1}
+nav a[aria-current=page]{color:var(--accent);position:relative}
+nav a[aria-current=page]::after{content:'';position:absolute;left:35%;right:35%;bottom:3px;height:2px;border-radius:2px;background:var(--accent)}
+.about-research{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.page-section{padding-top:48px;min-height:450px}
+.page-section .section-heading{margin-bottom:40px}
+.page-section h1{font-size:44px;line-height:1.25;margin:15px 0 0;letter-spacing:-1.5px}
+.page-section h1 span{color:var(--accent)}
+.publications-page .paper{padding-block:30px;grid-template-columns:65px minmax(0,1fr);gap:24px}
+.publications-page .paper h3{font-size:20px;max-width:820px}
+.publications-page .paper-description{font-size:14px}
+.publications-page .paper-contribution{font-size:12px;max-width:800px}
+.publications-page .paper-venue{font-size:12px}
+.connect-section.page-section{margin-top:0;border-top:0;align-content:start;align-items:start;gap:60px}
+.connect-section.page-section .social-list{padding-top:30px;grid-template-columns:1fr}
+.connect-section.page-section .social{border:1px solid var(--line);border-radius:16px;padding:22px}
+.connect-section.page-section .social strong{font-size:14px}
+.connect-section.page-section .social small{font-size:12px}
+@media(max-width:700px){.page-section{padding-top:30px;min-height:400px}.page-section h1{font-size:34px}.page-section .section-heading{gap:16px;align-items:start;flex-wrap:wrap;margin-bottom:30px}.publications-page .paper{grid-template-columns:38px minmax(0,1fr);gap:15px}.publications-page .paper h3{font-size:17px}.publications-page .paper-description{font-size:13px}.about-research{grid-template-columns:1fr}.connect-section.page-section{gap:18px}.connect-section.page-section .social-list{padding-top:8px}}
+.footer{width:min(1024px,calc(100% - 128px));margin-inline:auto}
+@media(max-width:1120px){.footer{width:calc(100% - 112px)}}
+@media(max-width:820px){.footer{width:calc(100% - 64px)}}
+@media(max-width:540px){.footer{width:calc(100% - 48px)}}
+@media(max-width:360px){.header nav a{padding-inline:11px}}
