@@ -1,28 +1,24 @@
-# Personal website preview
+# Lei Cai — personal website
 
-An original static implementation inspired by Spotlight's restrained personal-portfolio layout. This is not the licensed Tailwind Plus template; no paid template source is included.
+Public website: https://cl-coraje.github.io/
+Repository: https://github.com/cl-coraje/cl-coraje.github.io
 
-## Preview locally
+An independent static portfolio inspired by Spotlight's restrained visual style. It presents Lei Cai's postdoctoral and education history, selected research papers, and GitHub profile.
+
+## Content
+
+Update `content.js` for publications, education, apps and social links. Update `index.html` for the introductory heading, fallback biography and search/share metadata. `styles.css` controls presentation; `site.js` renders data and handles the theme switch.
+
+Profile updated from the supplied 2026 CV. Publication authors, years, volumes and article numbers were verified against Crossref. The 2025 Omega article has a DOI containing 2024; the publication year remains 2025. No manuscript files are hosted; DOI links open the publisher's page. Apps are currently an empty section until actual products are supplied.
+
+## Local preview
+
+Inside this directory:
 
 ```sh
-cd personal-website
 python3 -m http.server 4173 --bind 127.0.0.1
 ```
 
-Open http://127.0.0.1:4173. No installation or build is required. The existing research-map application in the parent folder is independent.
+## Deployment
 
-## Add your information
-
-Edit `content.js` to set your name, biography, research focus, publications, apps, and social links. Unconfigured links are displayed as non-interactive placeholders. All current paper and app entries are explicitly sample content, not real achievements.
-
-Set `isPreview` to `false` after replacing the sample content. Also update the description in `index.html`, the introductory headline, and replace the initials avatar with your portrait if desired. Remove any unused sample entries. The four editorial illustrations are decorative, original HTML/CSS/SVG, not screenshots of real apps.
-
-The theme button supports light and dark appearance and remembers the selection locally. The page is responsive and includes keyboard focus states and reduced-motion support. The folder can be hosted as a static site after the real content is ready.
-
-## Public hosting
-
-Repository: https://github.com/cl-coraje/cl-coraje.github.io
-
-Target website: https://cl-coraje.github.io/
-
-Deploy through GitHub Pages from the master branch, root directory. The .nojekyll file enables plain static serving. Content is currently a clearly labeled design preview; replace the sample publications and apps before treating it as a complete academic profile.
+GitHub Pages serves the `master` branch from `/ (root)` with HTTPS. `.nojekyll` enables plain static serving. Local edits become public only after being uploaded or committed to the repository. No build or npm packages are required.

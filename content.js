@@ -1,26 +1,80 @@
-// Replace the clearly marked sample content with your real information.
-// Links remain non-interactive until a valid https:// or mailto: URL is supplied.
+// Public academic profile. Publication metadata verified against Crossref.
 window.portfolioContent = {
-  isPreview: true,
-  name: '你的姓名',
-  englishName: 'Your Name',
-  initials: 'YN',
-  bio: '这里记录我的科研工作、开发的 App，以及持续探索的想法。从一个值得研究的问题，到一个可以使用的产品。',
-  focus: '这里可以放置你当前的研究方向、正在开发的产品，或最近感兴趣的问题。',
-  papers: [
-    { year: '年份', title: '你的代表性论文标题', authors: '作者列表 · 你的姓名', venue: '期刊 / 会议名称', description: '用一两句话说明这篇论文研究了什么问题，以及最重要的发现或贡献。', links: [{ label: '论文 PDF', url: '' }, { label: 'DOI', url: '' }, { label: '代码', url: '' }] },
-    { year: '年份', title: '另一篇值得分享的研究工作', authors: '作者列表 · 你的姓名', venue: '期刊 / 会议名称', description: '这里可以简洁地介绍研究方法与结果，让同行和其他领域的读者都能快速了解你的工作。', links: [{ label: '论文 PDF', url: '' }, { label: 'DOI', url: '' }] },
-    { year: '年份', title: '从一个问题开始的新探索', authors: '作者列表 · 你的姓名', venue: '期刊 / 会议名称', description: '添加你的真实论文后，这里将展示正式的题目、作者、发表信息，以及全文和相关资源的链接。', links: [{ label: '论文 PDF', url: '' }, { label: '项目主页', url: '' }] },
+  "isPreview": false,
+  "name": "蔡磊",
+  "englishName": "Lei Cai",
+  "initials": "CL",
+  "bio": "我是蔡磊，现为南京大学工程管理学院博士后，2025 年获武汉大学管理科学与工程博士学位。我的研究围绕运筹优化与路径规划展开，关注无人机巡检、电动车调度等实际问题的建模与算法设计。",
+  "focus": "围绕设施巡检与交通调度中的资源配置、路径设计问题，开展优化方法与算法研究。代表性工作涉及站点式无人机巡检，以及电动车重新调配中的自适应大邻域搜索与禁忌搜索。",
+  "papers": [
+    {
+      "year": "2025",
+      "title": "Optimal allocation and route design for station-based drone inspection of large-scale facilities",
+      "authors": "Lei Cai; Jiliu Li; Kai Wang; Zhixing Luo; Hu Qin",
+      "venue": "Omega · 130 · 103172",
+      "role": "唯一第一作者",
+      "description": "研究大型设施站点式无人机巡检中的资源配置与路径设计问题。",
+      "contribution": "研究构想与问题提出、算法开发、研究方法设计、实验设计与实施、论文初稿撰写及修改润色。",
+      "links": [
+        {
+          "label": "论文 / DOI",
+          "url": "https://doi.org/10.1016/j.omega.2024.103172"
+        }
+      ]
+    },
+    {
+      "year": "2022",
+      "title": "A hybrid adaptive large neighborhood search and tabu search algorithm for the electric vehicle relocation problem",
+      "authors": "Lei Cai; Xin Wang; Zhixing Luo; Yijing Liang",
+      "venue": "Computers & Industrial Engineering · 167 · 108005",
+      "role": "唯一第一作者",
+      "description": "针对电动车重新调配问题，研究结合自适应大邻域搜索与禁忌搜索的混合算法。",
+      "contribution": "研究方法设计、算法开发、实验设计与实施。",
+      "links": [
+        {
+          "label": "论文 / DOI",
+          "url": "https://doi.org/10.1016/j.cie.2022.108005"
+        }
+      ]
+    }
   ],
-  apps: [
-    { name: '你的 App 名称', category: 'APP 01', icon: '✳', color: 'mint', description: '一句话介绍这个 App 为谁而做，以及它能帮助用户解决什么问题。', platform: '平台待补充', url: '' },
-    { name: '你的另一款作品', category: 'APP 02', icon: '◈', color: 'lavender', description: '展示一个你制作的工具或产品，分享从想法到实现的过程。', platform: '平台待补充', url: '' },
-    { name: '正在探索的项目', category: 'APP 03', icon: '⌘', color: 'peach', description: '这里可以展示实验性 App、开源工具，或一个正在成长的小项目。', platform: '平台待补充', url: '' },
+  "experience": [
+    {
+      "period": "2025.09 — 至今",
+      "institution": "南京大学",
+      "degree": "博士后",
+      "field": "工程管理学院",
+      "current": true
+    },
+    {
+      "period": "2021.09 — 2025.06",
+      "institution": "武汉大学",
+      "degree": "博士",
+      "field": "管理科学与工程",
+      "current": false
+    },
+    {
+      "period": "2018.09 — 2021.06",
+      "institution": "南京大学",
+      "degree": "硕士",
+      "field": "工业工程",
+      "current": false
+    },
+    {
+      "period": "2014.09 — 2018.06",
+      "institution": "哈尔滨工程大学",
+      "degree": "学士",
+      "field": "电子商务",
+      "current": false
+    }
   ],
-  socials: [
-    { name: 'Google Scholar', detail: '学术主页', icon: 'G', url: '' },
-    { name: 'GitHub', detail: '代码与开源', icon: '⌘', url: 'https://github.com/cl-coraje' },
-    { name: 'Email', detail: '邮件联系', icon: '@', url: '' },
-    { name: '更多社交账号', detail: '可替换为你的平台', icon: '↗', url: '' },
-  ],
+  "apps": [],
+  "socials": [
+    {
+      "name": "GitHub",
+      "detail": "cl-coraje · 代码与开源",
+      "icon": "⌘",
+      "url": "https://github.com/cl-coraje"
+    }
+  ]
 };
