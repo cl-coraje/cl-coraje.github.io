@@ -33,13 +33,6 @@ document.querySelector('#paper-list').innerHTML = content.papers.map((paper) => 
       <div class="paper-links">${paper.links.map((link) => resourceLink(link.label, link.url)).join('')}</div>
     </div>
   </article>`).join('');
-document.querySelector('#experience-list').innerHTML = content.experience.map((item) => `
-  <article class="experience-item${item.current ? ' current' : ''}">
-    <div class="experience-period">${escapeHtml(item.period)}</div>
-    <h3>${escapeHtml(item.institution)}</h3>
-    <span class="experience-degree">${escapeHtml(item.degree)}</span>
-    <p>${escapeHtml(item.field)}</p>
-  </article>`).join('');
 document.querySelector('#app-list').innerHTML = content.apps.length ? content.apps.map((app) => `
   <article class="app-card">
     <div class="app-top"><span class="app-icon ${['mint', 'lavender', 'peach'].includes(app.color) ? app.color : 'mint'}" aria-hidden="true">${escapeHtml(app.icon)}</span><span class="eyebrow">${escapeHtml(app.category)}</span></div>

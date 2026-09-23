@@ -38,36 +38,6 @@ window.portfolioContent = {
       ]
     }
   ],
-  "experience": [
-    {
-      "period": "2025.09 — 至今",
-      "institution": "南京大学",
-      "degree": "博士后",
-      "field": "工程管理学院",
-      "current": true
-    },
-    {
-      "period": "2021.09 — 2025.06",
-      "institution": "武汉大学",
-      "degree": "博士",
-      "field": "管理科学与工程",
-      "current": false
-    },
-    {
-      "period": "2018.09 — 2021.06",
-      "institution": "南京大学",
-      "degree": "硕士",
-      "field": "工业工程",
-      "current": false
-    },
-    {
-      "period": "2014.09 — 2018.06",
-      "institution": "哈尔滨工程大学",
-      "degree": "学士",
-      "field": "电子商务",
-      "current": false
-    }
-  ],
   "apps": [],
   "socials": [
     {

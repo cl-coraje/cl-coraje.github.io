@@ -3,11 +3,11 @@
 Public website: https://cl-coraje.github.io/
 Repository: https://github.com/cl-coraje/cl-coraje.github.io
 
-An independent static portfolio inspired by Spotlight's restrained visual style. It presents Lei Cai's postdoctoral and education history, selected research papers, and GitHub profile.
+An independent static portfolio inspired by Spotlight's restrained visual style. It presents Lei Cai's research profile, selected research papers, apps, and GitHub account.
 
 ## Content
 
-Update `content.js` for publications, education, apps and social links. Update `index.html` for the introductory heading, fallback biography and search/share metadata. `styles.css` controls presentation; `site.js` renders data and handles the theme switch.
+Update `content.js` for publications, apps and social links. Update `index.html` for the introductory heading, fallback biography and search/share metadata. `styles.css` controls presentation; `site.js` renders data and handles the theme switch.
 
 Profile updated from the supplied 2026 CV. Publication authors, years, volumes and article numbers were verified against Crossref. The 2025 Omega article has a DOI containing 2024; the publication year remains 2025. No manuscript files are hosted; DOI links open the publisher's page. Apps are currently an empty section until actual products are supplied.
 
