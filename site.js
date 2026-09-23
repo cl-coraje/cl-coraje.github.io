@@ -52,7 +52,7 @@ function renderLanguage() {
   document.querySelector('meta[name="description"]').content = description;
   document.querySelector('meta[property="og:description"]').content = description;
   document.querySelector('meta[property="og:title"]').content = title;
-setHtml('#profile-name', language === "en" ? `${escapeHtml(content.englishName)} <span>/ ${escapeHtml(content.name)}</span>` : `${escapeHtml(content.name)} <span>/ ${escapeHtml(content.englishName)}</span>`);
+setText('#profile-name', language === "en" ? content.englishName : content.name);
 setText('#profile-bio', content.bio);
 setText('#profile-focus', content.focus);
 setHtml('.monogram', `${escapeHtml(content.initials.slice(0, 1))}<span>.</span>`);
