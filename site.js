@@ -16,7 +16,6 @@ function renderAuthors(authors) {
 document.querySelector('#profile-name').innerHTML = `${escapeHtml(content.name)} <span>/ ${escapeHtml(content.englishName)}</span>`;
 document.querySelector('#profile-bio').textContent = content.bio;
 document.querySelector('#profile-focus').textContent = content.focus;
-document.querySelector('.avatar').textContent = content.initials;
 document.querySelector('.monogram').innerHTML = `${escapeHtml(content.initials.slice(0, 1))}<span>.</span>`;
 document.querySelector('#copyright').textContent = `© ${new Date().getFullYear()} ${content.englishName || content.name}`;
 document.title = `${content.name} · ${content.englishName} | 运筹优化与算法研究`;
