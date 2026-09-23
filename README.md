@@ -28,3 +28,7 @@ GitHub Pages serves the `master` branch from `/ (root)` with HTTPS. `.nojekyll` 
 The upper-right language switch supports Chinese and English and remembers the selection in local storage. Chinese is the default. Edit `portfolioContentEn` and `portfolioUI` in `content.js` alongside the Chinese content when updating translations. Publication titles and DOI metadata are shared across languages.
 
 All navigation links open separate HTML documents. Language and theme preferences are shared across pages. Publish all four HTML files and shared assets together; increment the asset version query when changing JavaScript or CSS.
+
+## Shared header assets
+
+All four pages use an avatar-and-name link back to About. The name follows the selected language. `site.js` and `styles.css` are the editable sources; HTML currently references content-hashed copies (`site.0ea4194b69.js` and `styles.21f34451aa.css`) to prevent reuse of outdated scripts/styles. After editing a source, regenerate its hashed copy, update all four HTML references, and publish them together.
