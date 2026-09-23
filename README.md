@@ -31,8 +31,10 @@ All navigation links open separate HTML documents. Language and theme preference
 
 ## Shared header assets
 
-All four pages use an avatar-and-name link back to About. The name follows the selected language. `site.js` and `styles.css` are the editable sources; HTML currently references content-hashed copies (`site.e423a2a261.js` and `styles.549a5e575c.css`) to prevent reuse of outdated scripts/styles. After editing a source, regenerate its hashed copy, update all four HTML references, and publish them together.
+All four pages use an avatar-and-name link back to About. The name follows the selected language. `site.js` and `styles.css` are the editable sources; HTML currently references content-hashed copies (`site.a18916a7ac.js` and `styles.549a5e575c.css`) to prevent reuse of outdated scripts/styles. After editing a source, regenerate its hashed copy, update all four HTML references, and publish them together.
 
 ## Copy style
 
-Keep visible pages minimal: no eyebrow subtitles, redundant affiliations, research summary cards, publication author/role/description/contribution blocks, social captions, placeholder copy, or decorative fine print. Retain the main biography, page headings, publication titles and venue/year/DOI links, actual projects and social links. Source publication data remain in `content.js` for maintenance.
+Keep visible pages minimal: no eyebrow subtitles, redundant affiliations, research summary cards, publication author/role/description/contribution blocks, social captions, placeholder copy, or decorative fine print. Retain the main biography, page headings, publication titles, years and DOI links, actual projects and social links. Source publication data remain in `content.js` for maintenance.
+
+Journal names, volume numbers and article identifiers are omitted from the visible paper list.
