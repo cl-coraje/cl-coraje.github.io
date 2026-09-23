@@ -22,3 +22,7 @@ python3 -m http.server 4173 --bind 127.0.0.1
 ## Deployment
 
 GitHub Pages serves the `master` branch from `/ (root)` with HTTPS. `.nojekyll` enables plain static serving. Local edits become public only after being uploaded or committed to the repository. No build or npm packages are required.
+
+## Languages
+
+The upper-right language switch supports Chinese and English and remembers the selection in local storage. Chinese is the default. Edit `portfolioContentEn` and `portfolioUI` in `content.js` alongside the Chinese content when updating translations. Publication titles and DOI metadata are shared across languages.
